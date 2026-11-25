@@ -92,6 +92,7 @@ GCOV_PROFILE_test_bitmap.o := n
 endif
 
 obj-$(CONFIG_TEST_XARRAY) += test_xarray.o
+obj-$(CONFIG_TEST_CC_XARRAY) += test_cc_xarray.o
 obj-$(CONFIG_TEST_MAPLE_TREE) += test_maple_tree.o
 obj-$(CONFIG_TEST_PARMAN) += test_parman.o
 obj-$(CONFIG_TEST_KMOD) += test_kmod.o

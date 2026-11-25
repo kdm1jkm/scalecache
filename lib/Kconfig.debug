@@ -2565,6 +2565,15 @@ config TEST_BITMAP
 config TEST_XARRAY
 	tristate "Test the XArray code at runtime"
 
+config TEST_CC_XARRAY
+	bool "Test the cc_xarray order and split interfaces at boot"
+	help
+	  Run the order > 0 store, delete, walk, mark and split cases of
+	  cc_xarray at boot, with kernel threads as concurrent writers and
+	  readers, and split folios of a ccXArray mapping.
+
+	  If unsure, say N.
+
 config TEST_MAPLE_TREE
 	tristate "Test the Maple Tree code at runtime or module load"
 	help
